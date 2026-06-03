@@ -1,0 +1,86 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Banghua Yang": {},
+    "Fenqi Rong": {},
+    "Yunlong Xie": {},
+    "Du Li": {},
+    "Jiayang Zhang": {},
+    "Fu Li": {},
+    "Guangming Shi": {},
+    "Xiaorong Gao": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/s41597-025-04826-y",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000348",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000348",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "Yang et al. 2025 — A multi-day and high-quality EEG dataset for motor imagery brain-computer interface",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "68.0 GB (154 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing motor imagery tasks across three sessions on different days. The dataset includes two experimental conditions: a 2-class paradigm (left and right hand motor imagery) with 51 subjects, and a 3-class paradigm (left hand, right hand, and foot motor imagery) with 11 subjects. Data were acquired using 59 EEG channels sampled at 1000 Hz with standardized 10-05 electrode montage, totaling 39,600 trials with visual and auditory cues. This resource is designed to support the development and benchmarking of motor imagery BCI algorithms and classifiers.",
+  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes in standard 10-05 montage at 1000 Hz sampling rate. Subjects performed motor imagery tasks (left hand, right hand, and foot) cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Three sessions were conducted on different days for each subject. Data were recorded in BDF format with 50 Hz line frequency and bandpass filtered at 0.5-40 Hz.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "BCI"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+    },
+    {
+      "term": "multi-day dataset"
+    },
+    {
+      "term": "motor imagery paradigm"
+    }
+  ],
+  "source_hash": "84c44a38c4d517c8a9772ef51d5465b7b011e8f05b4ff9673c7748122f61bb99"
+}
