@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Yang et al. 2025 — A multi-day and high-quality EEG dataset for motor imagery brain-computer interface",
-  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing left and right hand motor imagery tasks across three sessions. The dataset includes 59 EEG channels sampled at 1000 Hz with standardized 10-05 electrode montage, totaling 39,600 trials with visual and auditory cues. This resource is designed to support the development and benchmarking of motor imagery BCI algorithms and classifiers.",
-  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes in a standard 10-05 montage at 1000 Hz sampling rate, along with 1 ECG channel and 4 EOG channels. Subjects performed motor imagery tasks (left hand, right hand, and foot-hooking for a subset) cued by visual and auditory stimuli. Each trial consisted of a 1.5 s cue period followed by 4.0 s imagery duration. Three sessions were conducted on different days for each subject, with 200 trials per session for the 2-class paradigm (51 subjects) and 300 trials per session for the 3-class paradigm (11 subjects).",
+  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing left and right hand motor imagery tasks across three sessions. The dataset includes 59 EEG channels sampled at 1000 Hz with standardized 10-05 montage, totaling 39,600 trials with visual and auditory cues. This resource supports the development and benchmarking of motor imagery BCI algorithms and classifiers.",
+  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes at 1000 Hz sampling rate using the standard 10-05 montage. Subjects performed motor imagery tasks (left hand, right hand, and foot) cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Three sessions were conducted on different days for each subject, with 200 trials per session for 2-class tasks and 300 trials for 3-class tasks.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -34,6 +34,15 @@
     },
     {
       "term": "classification"
+    },
+    {
+      "term": "multi-day"
+    },
+    {
+      "term": "longitudinal"
+    },
+    {
+      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -79,5 +88,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "3901362bb7e9c87a4bd694991d4331212226bd4a98c84b425f2da1335086f410"
+  "source_hash": "eb4b6b9f4b386b80089aec717861b4b7b46987f849079a4c5e734e96a5f3bef4"
 }
