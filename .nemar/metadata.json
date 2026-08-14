@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Yang et al. 2025 — A multi-day and high-quality EEG dataset for motor imagery brain-computer interface",
-  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing left and right hand motor imagery tasks across three sessions. The dataset includes 59 EEG channels sampled at 1000 Hz with standardized 10-05 montage, totaling 39,600 trials with visual and auditory cues. This resource supports the development and benchmarking of motor imagery BCI algorithms and classifiers.",
-  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes at 1000 Hz sampling rate using the standard 10-05 montage. Subjects performed motor imagery tasks (left hand, right hand, and foot) cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Three sessions were conducted on different days for each subject, with 200 trials per session for 2-class tasks and 300 trials for 3-class tasks.",
+  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing left and right hand motor imagery tasks across three sessions. The dataset includes 59 EEG channels (plus 1 ECG and 4 EOG channels) sampled at 1000 Hz with standardized 10-05 electrode montage, totaling 39,600 trials with visual and auditory cues. This resource is designed to support the development and benchmarking of motor imagery BCI algorithms and classifiers.",
+  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes in standard 10-05 montage at 1000 Hz sampling rate. Subjects performed motor imagery tasks (left hand, right hand, and feet for a subset) cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Three sessions were conducted on different days for each subject, with 200 trials per session for the 2-class paradigm (51 subjects) and 300 trials per session for the 3-class paradigm (11 subjects).",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -34,15 +34,6 @@
     },
     {
       "term": "classification"
-    },
-    {
-      "term": "multi-day"
-    },
-    {
-      "term": "longitudinal"
-    },
-    {
-      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -88,5 +79,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "eb4b6b9f4b386b80089aec717861b4b7b46987f849079a4c5e734e96a5f3bef4"
+  "source_hash": "6fb7100caa77ebf87eb86b1e102d1740b92aa13048c44b027e9d8fbbcc38bf36"
 }
