@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Yang et al. 2025 — A multi-day and high-quality EEG dataset for motor imagery brain-computer interface",
-  "description": "A multi-day, high-quality EEG dataset for motor imagery brain-computer interface research comprising 51 healthy subjects performing left and right hand motor imagery tasks across three sessions. The dataset includes 59 EEG channels (plus 1 ECG and 4 EOG channels) sampled at 1000 Hz with standardized 10-05 electrode montage, totaling 39,600 trials with visual and auditory cues. This resource is designed to support the development and benchmarking of motor imagery BCI algorithms and classifiers.",
-  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system with 59 Ag/AgCl electrodes in standard 10-05 montage at 1000 Hz sampling rate. Subjects performed motor imagery tasks (left hand, right hand, and feet for a subset) cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Three sessions were conducted on different days for each subject, with 200 trials per session for the 2-class paradigm (51 subjects) and 300 trials per session for the 3-class paradigm (11 subjects).",
+  "description": "This dataset (WBCIC-SHU) contains multi-day EEG recordings from 51 healthy, right-handed participants performing motor imagery tasks for brain-computer interface (BCI) research. Participants imagined left-hand, right-hand, and (for a subset) foot movements across three sessions on different days, yielding 39,600 trials. The dataset was converted to BIDS format using MOABB and is intended to support benchmarking of motor imagery BCI classification algorithms.",
+  "methods_description": "EEG was recorded with a Neuracle NeuSen W system at 1000 Hz using 59 Ag/AgCl electrodes (plus ECG and EOG channels) placed according to the standard_1005 montage, with a line frequency of 50 Hz. Participants performed synchronous offline motor imagery trials (left_hand, right_hand, and foot-hooking for a subset) cued via visual and auditory stimuli, with 1.5 s cue and 4.0 s imagery periods per trial, across three sessions per subject.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,19 +21,23 @@
       "term": "EEG"
     },
     {
-      "term": "motor imagery"
+      "term": "Motor Imagery"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "motor control"
+      "term": "Imagination",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     },
     {
-      "term": "signal processing"
+      "term": "Motor Control"
     },
     {
-      "term": "classification"
+      "term": "Multi-day recordings"
     }
   ],
   "related_identifiers": [
@@ -51,6 +55,16 @@
       "identifier": "https://nemar.org/dataset/nm000348",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "resource_type_general": "Dataset",
@@ -79,5 +93,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "6fb7100caa77ebf87eb86b1e102d1740b92aa13048c44b027e9d8fbbcc38bf36"
+  "source_hash": "c72e56ab04addb5b99a78b9dee3074d0281fde42e72ae9896fb7380eb64292c5"
 }
