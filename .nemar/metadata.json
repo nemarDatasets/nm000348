@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Yang et al. 2025 — A multi-day and high-quality EEG dataset for motor imagery brain-computer interface",
-  "description": "This dataset (WBCIC-SHU) contains multi-day EEG recordings from 51 healthy, right-handed participants performing motor imagery tasks for brain-computer interface (BCI) research. Participants imagined left-hand, right-hand, and (for a subset) foot movements across three sessions on different days, yielding 39,600 trials. The dataset was converted to BIDS format using MOABB and is intended to support benchmarking of motor imagery BCI classification algorithms.",
-  "methods_description": "EEG was recorded with a Neuracle NeuSen W system at 1000 Hz using 59 Ag/AgCl electrodes (plus ECG and EOG channels) placed according to the standard_1005 montage, with a line frequency of 50 Hz. Participants performed synchronous offline motor imagery trials (left_hand, right_hand, and foot-hooking for a subset) cued via visual and auditory stimuli, with 1.5 s cue and 4.0 s imagery periods per trial, across three sessions per subject.",
+  "description": "A multi-day electroencephalography (EEG) dataset for motor imagery brain-computer interface (MI-BCI) research, collected at Shanghai University (WBCIC-SHU). It includes 51 healthy, BCI-naive participants who each completed three sessions on different days. Participants performed two-class (left/right hand) motor imagery, and a subset of 11 also performed three-class imagery (adding foot-hooking). The data were recorded with 59 EEG channels at 1000 Hz, and benchmark classifiers (CSP+SVM, FBCSP+SVM, EEGNet, deepConvNet, FBCNet) are reported.",
+  "methods_description": "EEG was recorded with a Neuracle NeuSen W system (59 EEG channels plus ECG and EOG, Ag/AgCl sensors, 1000 Hz sampling rate). Each trial was 7.5 s, with video cues followed by 4 s of motor imagery. Participants imagined left-hand or right-hand movements (and foot-hooking in the three-class subset) over 3 sessions on different days, 200 trials per session for the 2-class task and 300 for the 3-class task. Evaluation used 10-fold within-session cross-validation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,23 +21,24 @@
       "term": "EEG"
     },
     {
-      "term": "Motor Imagery"
+      "term": "motor imagery"
     },
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Imagination",
+      "term": "multi-day recording"
+    },
+    {
+      "term": "left/right hand imagery"
+    },
+    {
+      "term": "Electroencephalography",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
-    },
-    {
-      "term": "Motor Control"
-    },
-    {
-      "term": "Multi-day recordings"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     }
   ],
   "related_identifiers": [
@@ -73,7 +74,7 @@
     "eeg"
   ],
   "sizes": [
-    "165.1 GB (743 files)"
+    "154 GB (743 files)"
   ],
   "formats": [
     ".bdf",
